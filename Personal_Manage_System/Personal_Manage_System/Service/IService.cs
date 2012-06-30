@@ -58,6 +58,27 @@ namespace Service
          * */
         bool updateCategory(Category Category);
 
+        /**
+         * 
+         * 查询所有客户
+         * 
+         * */
+        List<Customer> findCustomers();
+
+        /**
+         * 
+         * 增加客户
+         * 
+         * */
+        bool addCustomer(Customer customer);
+
+        /**
+         * 
+         * 更新客户
+         * 
+         * */
+        bool updateCustomer(Customer customer);
+
 
         /**
          * 

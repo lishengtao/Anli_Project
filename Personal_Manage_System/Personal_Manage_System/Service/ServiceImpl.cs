@@ -244,6 +244,33 @@ namespace Service
             }
         }
 
+        /**
+        * 
+        * 查询所有客户
+        * 
+        * */
+        public List<Customer> findCustomers()
+        {
+        }
+
+        /**
+         * 
+         * 增加客户
+         * 
+         * */
+        public bool addCustomer(Customer customer)
+        {
+        }
+
+        /**
+         * 
+         * 更新客户
+         * 
+         * */
+        public bool updateCustomer(Customer customer)
+        {
+        }
+
 
         /**
          * 

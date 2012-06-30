@@ -9,6 +9,8 @@ namespace Model
     {
         public Customer() { }
 
+        public Customer(string name) { this.name = name; }
+
         public string name
         {
              get{return name;}

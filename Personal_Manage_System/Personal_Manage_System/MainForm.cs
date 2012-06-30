@@ -54,5 +54,10 @@ namespace Personal_Manage_System
         {
             new view.CategoryManageForm().ShowDialog();
         }
+
+        private void menuItem31_Click(object sender, EventArgs e)
+        {
+            new view.CustomerManageForm().ShowDialog();
+        }
     }
 }

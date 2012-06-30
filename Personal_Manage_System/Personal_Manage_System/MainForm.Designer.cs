@@ -68,7 +68,7 @@
             this.menuItem6});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(816, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(816, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -79,26 +79,26 @@
             this.menuItem12,
             this.menuItem13});
             this.menuItem1.Name = "menuItem1";
-            this.menuItem1.Size = new System.Drawing.Size(71, 20);
+            this.menuItem1.Size = new System.Drawing.Size(85, 21);
             this.menuItem1.Text = "menuItem1";
             // 
             // menuItem11
             // 
             this.menuItem11.Name = "menuItem11";
-            this.menuItem11.Size = new System.Drawing.Size(152, 22);
+            this.menuItem11.Size = new System.Drawing.Size(148, 22);
             this.menuItem11.Text = "menuItem11";
             this.menuItem11.Click += new System.EventHandler(this.menuItem11_Click);
             // 
             // menuItem12
             // 
             this.menuItem12.Name = "menuItem12";
-            this.menuItem12.Size = new System.Drawing.Size(152, 22);
+            this.menuItem12.Size = new System.Drawing.Size(148, 22);
             this.menuItem12.Text = "menuItem12";
             // 
             // menuItem13
             // 
             this.menuItem13.Name = "menuItem13";
-            this.menuItem13.Size = new System.Drawing.Size(152, 22);
+            this.menuItem13.Size = new System.Drawing.Size(148, 22);
             this.menuItem13.Text = "menuItem13";
             this.menuItem13.Click += new System.EventHandler(this.menuItem13_Click);
             // 
@@ -108,19 +108,19 @@
             this.menuItem21,
             this.menuItem22});
             this.menuItem2.Name = "menuItem2";
-            this.menuItem2.Size = new System.Drawing.Size(71, 20);
+            this.menuItem2.Size = new System.Drawing.Size(85, 21);
             this.menuItem2.Text = "menuItem2";
             // 
             // menuItem21
             // 
             this.menuItem21.Name = "menuItem21";
-            this.menuItem21.Size = new System.Drawing.Size(130, 22);
+            this.menuItem21.Size = new System.Drawing.Size(148, 22);
             this.menuItem21.Text = "menuItem21";
             // 
             // menuItem22
             // 
             this.menuItem22.Name = "menuItem22";
-            this.menuItem22.Size = new System.Drawing.Size(130, 22);
+            this.menuItem22.Size = new System.Drawing.Size(148, 22);
             this.menuItem22.Text = "menuItem22";
             // 
             // menuItem3
@@ -128,27 +128,28 @@
             this.menuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuItem31});
             this.menuItem3.Name = "menuItem3";
-            this.menuItem3.Size = new System.Drawing.Size(71, 20);
+            this.menuItem3.Size = new System.Drawing.Size(85, 21);
             this.menuItem3.Text = "menuItem3";
             // 
             // menuItem31
             // 
             this.menuItem31.Name = "menuItem31";
-            this.menuItem31.Size = new System.Drawing.Size(130, 22);
+            this.menuItem31.Size = new System.Drawing.Size(152, 22);
             this.menuItem31.Text = "menuItem31";
+            this.menuItem31.Click += new System.EventHandler(this.menuItem31_Click);
             // 
             // menuItem4
             // 
             this.menuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuItem41});
             this.menuItem4.Name = "menuItem4";
-            this.menuItem4.Size = new System.Drawing.Size(71, 20);
+            this.menuItem4.Size = new System.Drawing.Size(85, 21);
             this.menuItem4.Text = "menuItem4";
             // 
             // menuItem41
             // 
             this.menuItem41.Name = "menuItem41";
-            this.menuItem41.Size = new System.Drawing.Size(130, 22);
+            this.menuItem41.Size = new System.Drawing.Size(148, 22);
             this.menuItem41.Text = "menuItem41";
             // 
             // menuItem5
@@ -156,19 +157,19 @@
             this.menuItem5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuItem51});
             this.menuItem5.Name = "menuItem5";
-            this.menuItem5.Size = new System.Drawing.Size(71, 20);
+            this.menuItem5.Size = new System.Drawing.Size(85, 21);
             this.menuItem5.Text = "menuItem5";
             // 
             // menuItem51
             // 
             this.menuItem51.Name = "menuItem51";
-            this.menuItem51.Size = new System.Drawing.Size(130, 22);
+            this.menuItem51.Size = new System.Drawing.Size(148, 22);
             this.menuItem51.Text = "menuItem51";
             // 
             // menuItem6
             // 
             this.menuItem6.Name = "menuItem6";
-            this.menuItem6.Size = new System.Drawing.Size(71, 20);
+            this.menuItem6.Size = new System.Drawing.Size(85, 21);
             this.menuItem6.Text = "menuItem6";
             // 
             // MainForm

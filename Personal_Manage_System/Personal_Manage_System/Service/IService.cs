@@ -60,28 +60,6 @@ namespace Service
 
         /**
          * 
-         * 查询所有客户
-         * 
-         * */
-        List<Customer> findCustomers();
-
-        /**
-         * 
-         * 增加客户
-         * 
-         * */
-        bool addCustomer(Customer customer);
-
-        /**
-         * 
-         * 更新客户
-         * 
-         * */
-        bool updateCustomer(Customer customer);
-
-
-        /**
-         * 
          * 查询表最大的id
          * 
          * */

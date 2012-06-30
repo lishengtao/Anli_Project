@@ -29,9 +29,23 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.brandListView = new System.Windows.Forms.ListView();
+            this.cutomerListView = new System.Windows.Forms.ListView();
             this.id = new System.Windows.Forms.ColumnHeader();
-            this.barndName = new System.Windows.Forms.ColumnHeader();
+            this.name = new System.Windows.Forms.ColumnHeader();
+            this.cardNo = new System.Windows.Forms.ColumnHeader();
+            this.birthday = new System.Windows.Forms.ColumnHeader();
+            this.profession = new System.Windows.Forms.ColumnHeader();
+            this.isMarried = new System.Windows.Forms.ColumnHeader();
+            this.incomeLevel = new System.Windows.Forms.ColumnHeader();
+            this.familyLevel = new System.Windows.Forms.ColumnHeader();
+            this.fristContactTime = new System.Windows.Forms.ColumnHeader();
+            this.type = new System.Windows.Forms.ColumnHeader();
+            this.makeCardTime = new System.Windows.Forms.ColumnHeader();
+            this.extendCardTime = new System.Windows.Forms.ColumnHeader();
+            this.extendCardNum = new System.Windows.Forms.ColumnHeader();
+            this.email = new System.Windows.Forms.ColumnHeader();
+            this.level = new System.Windows.Forms.ColumnHeader();
+            this.telephone = new System.Windows.Forms.ColumnHeader();
             this.addButton = new System.Windows.Forms.Button();
             this.updateButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
@@ -41,37 +55,109 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.brandListView);
+            this.panel1.Controls.Add(this.cutomerListView);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(598, 338);
             this.panel1.TabIndex = 0;
             // 
-            // brandListView
+            // cutomerListView
             // 
-            this.brandListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.cutomerListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.id,
-            this.barndName});
-            this.brandListView.Dock = System.Windows.Forms.DockStyle.Top;
-            this.brandListView.FullRowSelect = true;
-            this.brandListView.GridLines = true;
-            this.brandListView.Location = new System.Drawing.Point(0, 0);
-            this.brandListView.Name = "brandListView";
-            this.brandListView.ShowGroups = false;
-            this.brandListView.Size = new System.Drawing.Size(598, 338);
-            this.brandListView.TabIndex = 0;
-            this.brandListView.UseCompatibleStateImageBehavior = false;
-            this.brandListView.View = System.Windows.Forms.View.Details;
+            this.name,
+            this.cardNo,
+            this.birthday,
+            this.profession,
+            this.isMarried,
+            this.incomeLevel,
+            this.familyLevel,
+            this.fristContactTime,
+            this.type,
+            this.makeCardTime,
+            this.extendCardTime,
+            this.extendCardNum,
+            this.email,
+            this.level,
+            this.telephone});
+            this.cutomerListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cutomerListView.FullRowSelect = true;
+            this.cutomerListView.GridLines = true;
+            this.cutomerListView.Location = new System.Drawing.Point(0, 0);
+            this.cutomerListView.Name = "cutomerListView";
+            this.cutomerListView.ShowGroups = false;
+            this.cutomerListView.Size = new System.Drawing.Size(598, 338);
+            this.cutomerListView.TabIndex = 0;
+            this.cutomerListView.UseCompatibleStateImageBehavior = false;
+            this.cutomerListView.View = System.Windows.Forms.View.Details;
             // 
             // id
             // 
             this.id.Text = "ID";
             this.id.Width = 0;
             // 
-            // barndName
+            // name
             // 
-            this.barndName.Text = "品牌名字";
-            this.barndName.Width = 587;
+            this.name.Text = "姓名";
+            this.name.Width = 84;
+            // 
+            // cardNo
+            // 
+            this.cardNo.DisplayIndex = 3;
+            this.cardNo.Text = "安利卡号";
+            // 
+            // birthday
+            // 
+            this.birthday.DisplayIndex = 2;
+            this.birthday.Text = "出生日期";
+            // 
+            // profession
+            // 
+            this.profession.Text = "职业";
+            // 
+            // isMarried
+            // 
+            this.isMarried.Text = "婚姻状况";
+            // 
+            // incomeLevel
+            // 
+            this.incomeLevel.Text = "经济状况";
+            // 
+            // familyLevel
+            // 
+            this.familyLevel.Text = "家庭整体状况";
+            // 
+            // fristContactTime
+            // 
+            this.fristContactTime.Text = "首次接触时间";
+            // 
+            // type
+            // 
+            this.type.Text = "客户类型";
+            // 
+            // makeCardTime
+            // 
+            this.makeCardTime.Text = "办卡日期";
+            // 
+            // extendCardTime
+            // 
+            this.extendCardTime.Text = "续卡日期";
+            // 
+            // extendCardNum
+            // 
+            this.extendCardNum.Text = "续卡次数";
+            // 
+            // email
+            // 
+            this.email.Text = "电子邮箱";
+            // 
+            // level
+            // 
+            this.level.Text = "客户级别";
+            // 
+            // telephone
+            // 
+            this.telephone.Text = "联系方式";
             // 
             // addButton
             // 
@@ -137,12 +223,26 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ListView brandListView;
-        private System.Windows.Forms.ColumnHeader barndName;
+        private System.Windows.Forms.ListView cutomerListView;
+        private System.Windows.Forms.ColumnHeader name;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button updateButton;
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.Button quitButton;
         private System.Windows.Forms.ColumnHeader id;
+        private System.Windows.Forms.ColumnHeader cardNo;
+        private System.Windows.Forms.ColumnHeader birthday;
+        private System.Windows.Forms.ColumnHeader profession;
+        private System.Windows.Forms.ColumnHeader isMarried;
+        private System.Windows.Forms.ColumnHeader incomeLevel;
+        private System.Windows.Forms.ColumnHeader familyLevel;
+        private System.Windows.Forms.ColumnHeader fristContactTime;
+        private System.Windows.Forms.ColumnHeader type;
+        private System.Windows.Forms.ColumnHeader makeCardTime;
+        private System.Windows.Forms.ColumnHeader extendCardTime;
+        private System.Windows.Forms.ColumnHeader extendCardNum;
+        private System.Windows.Forms.ColumnHeader email;
+        private System.Windows.Forms.ColumnHeader level;
+        private System.Windows.Forms.ColumnHeader telephone;
     }
 }

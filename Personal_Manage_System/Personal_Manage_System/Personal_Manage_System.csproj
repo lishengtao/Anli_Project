@@ -149,6 +149,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Resource\Resource.zh-CN.Designer.cs" />
+    <Compile Include="Service\CommonServiceImpl.cs" />
+    <Compile Include="Service\CustomerServiceImpl.cs" />
+    <Compile Include="Service\ICommonService.cs" />
+    <Compile Include="Service\ICustomerService.cs" />
     <Compile Include="Service\IService.cs" />
     <Compile Include="Service\ServiceImpl.cs" />
     <Compile Include="util\Resource.cs" />

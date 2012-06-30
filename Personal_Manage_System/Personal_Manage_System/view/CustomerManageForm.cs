@@ -7,33 +7,34 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Model;
+using Service;
 
 namespace view
 {
     public partial class CustomerManageForm : common.MyForm
     {
-        private Service.IService service = null;
+        private ICustomerService service = null;
         public CustomerManageForm()
         {
             InitializeComponent();
-            this.Text = this.resource.getMsg("brand_manage");
+            this.Text = this.resource.getMsg("client_manage");
 
-            this.service = new Service.ServiceImpl();
+            this.service = new CustomerServiceImpl();
             initListView();
         }
 
         public void initListView()
         {
-            this.brandListView.Items.Clear();
-            List<Brand> brands = this.service.findBrands();
+            this.cutomerListView.Items.Clear();
+            List<Customer> customers = this.service.findCustomers();
 
             ListViewItem ls = null;
 
-            foreach (Brand brand in brands)
+            foreach (Customer customer in customers)
             {
-                ls = new ListViewItem(brand.Id.ToString());
-                ls.SubItems.Add(brand.getBrandName());
-                this.brandListView.Items.Add(ls);
+                ls = new ListViewItem(customer.Id.ToString());
+                //ls.SubItems.Add(brand.getBrandName());
+                this.cutomerListView.Items.Add(ls);
             }
 
         }
@@ -50,7 +51,7 @@ namespace view
 
         private void updateButton_Click(object sender, EventArgs e)
         {
-            ListViewItem item = this.brandListView.FocusedItem;
+            ListViewItem item = this.cutomerListView.FocusedItem;
             if (null != item)
             {
                 BrandForm brandForm = new BrandForm();
@@ -77,7 +78,7 @@ namespace view
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            ListViewItem item = this.brandListView.FocusedItem;
+            ListViewItem item = this.cutomerListView.FocusedItem;
             if (null != item)
             {
                 if((this.service.findIdByColomn("category","brand",int.Parse(item.SubItems[0].Text))) == -1)

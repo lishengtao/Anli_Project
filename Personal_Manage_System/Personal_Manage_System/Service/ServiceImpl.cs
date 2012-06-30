@@ -292,76 +292,76 @@ namespace Service
                             customer.name =dr.GetString(1);
 
                         if(dr.IsDBNull(2))                     //card_no
-                            customer = "";
+                            customer.cardNo = "";
                         else 
-                            customer = dr.GetString(2);
+                            customer.cardNo = dr.GetString(2);
 
                         if(dr.IsDBNull(3))                     //birthday
-                            customer = null;
+                            customer.birthday = DateTime.MaxValue;
                         else 
-                            customer = dr.GetDateTime(3);
+                            customer.birthday = dr.GetDateTime(3);
 
                         if(dr.IsDBNull(4))                     //profession
-                            customer = "";
+                            customer.profession = "";
                         else 
-                            customer = dr.GetString(4);
+                            customer.profession = dr.GetString(4);
 
                         if(dr.IsDBNull(5))                     //isMarried
-                            customer = false;
+                            customer.isMarried = false;
                         else 
-                            customer = dr.GetBoolean(5);
+                            customer.isMarried = dr.GetBoolean(5);
 
                          if(dr.IsDBNull(6))                    //income_level
-                            customer = IncomeLevel.GOOD;
+                            customer.incomeLevel = IncomeLevel.GOOD;
                         else 
-                            customer = dr.GetInt32(6);
+                            customer.incomeLevel = (IncomeLevel)dr.GetInt32(6);
 
                          if(dr.IsDBNull(7))                    //family_level
-                            customer = FamilyLevel.MEDIUM;
+                            customer.familyLevel = FamilyLevel.MEDIUM;
                         else 
-                            customer = dr.GetInt32(7);
+                            customer.familyLevel = (FamilyLevel)dr.GetInt32(7);
 
                          if(dr.IsDBNull(8))                    //first_contact_time
-                            customer = null;
+                            customer.firstContactTime = DateTime.MaxValue;
                         else 
-                            customer = dr.GetDateTime(8);
+                            customer.firstContactTime = dr.GetDateTime(8);
 
                          if(dr.IsDBNull(9))                    //make_card_time
-                            customer = null;
+                            customer.makeCardTime = DateTime.MaxValue;
                         else 
-                            customer = dr.GetDateTime(9);
+                            customer.makeCardTime = dr.GetDateTime(9);
 
                          if(dr.IsDBNull(10))                   //extend_card_time
-                            customer = null;
+                            customer.extendCardTime = DateTime.MaxValue;
                         else 
-                            customer = dr.GetDateTime(10);
+                            customer.extendCardTime = dr.GetDateTime(10);
 
                          if(dr.IsDBNull(11))                   //extend_card_num
-                            customer = 0;
+                            customer.extendCardNum = 0;
                         else 
-                            customer = dr.GetInt32(11);
+                            customer.extendCardNum = dr.GetInt32(11);
 
                          if(dr.IsDBNull(12))                   //telephone
-                            customer = "";
+                            customer.telephone = "";
                         else 
-                            customer = dr.GetString(12);
+                            customer.telephone = dr.GetString(12);
 
                          if (dr.IsDBNull(13))                   //email
-                             customer = "";
+                             customer.email = "";
                          else
-                             customer = dr.GetString(13);
+                             customer.email = dr.GetString(13);
 
                          if (dr.IsDBNull(14))                   //type
-                             customer = CustomerType.PERSONAL;
+                             customer.type = CustomerType.PERSONAL;
                          else
-                             customer = dr.GetInt32(14);
+                             customer.type = (CustomerType)dr.GetInt32(14);
 
                          if (dr.IsDBNull(15))                   //level
-                             customer = CustomerLevel.MEDIUM;
+                             customer.level = CustomerLevel.MEDIUM;
                          else
-                             customer = dr.GetInt32(15);
+                             customer.level = (CustomerLevel)dr.GetInt32(15);
 
-                        customers.Add(Customer);
+                        customers.Add(customer);
                     }
                 }
             }
@@ -430,76 +430,76 @@ namespace Service
                             customer.name = dr.GetString(1);
 
                         if (dr.IsDBNull(2))                     //card_no
-                            customer = "";
+                            customer.cardNo = "";
                         else
-                            customer = dr.GetString(2);
+                            customer.cardNo = dr.GetString(2);
 
                         if (dr.IsDBNull(3))                     //birthday
-                            customer = null;
+                            customer.birthday = DateTime.MaxValue;
                         else
-                            customer = dr.GetDateTime(3);
+                            customer.birthday = dr.GetDateTime(3);
 
                         if (dr.IsDBNull(4))                     //profession
-                            customer = "";
+                            customer.profession = "";
                         else
-                            customer = dr.GetString(4);
+                            customer.profession = dr.GetString(4);
 
                         if (dr.IsDBNull(5))                     //isMarried
-                            customer = false;
+                            customer.isMarried = false;
                         else
-                            customer = dr.GetBoolean(5);
+                            customer.isMarried = dr.GetBoolean(5);
 
                         if (dr.IsDBNull(6))                    //income_level
-                            customer = IncomeLevel.GOOD;
+                            customer.incomeLevel = IncomeLevel.GOOD;
                         else
-                            customer = dr.GetInt32(6);
+                            customer.incomeLevel = (IncomeLevel)dr.GetInt32(6);
 
                         if (dr.IsDBNull(7))                    //family_level
-                            customer = FamilyLevel.MEDIUM;
+                            customer.familyLevel = FamilyLevel.MEDIUM;
                         else
-                            customer = dr.GetInt32(7);
+                            customer.familyLevel = (FamilyLevel)dr.GetInt32(7);
 
                         if (dr.IsDBNull(8))                    //first_contact_time
-                            customer = null;
+                            customer.firstContactTime = DateTime.MaxValue;
                         else
-                            customer = dr.GetDateTime(8);
+                            customer.firstContactTime = dr.GetDateTime(8);
 
                         if (dr.IsDBNull(9))                    //make_card_time
-                            customer = null;
+                            customer.makeCardTime = DateTime.MaxValue;
                         else
-                            customer = dr.GetDateTime(9);
+                            customer.makeCardTime = dr.GetDateTime(9);
 
                         if (dr.IsDBNull(10))                   //extend_card_time
-                            customer = null;
+                            customer.extendCardTime = DateTime.MaxValue;
                         else
-                            customer = dr.GetDateTime(10);
+                            customer.extendCardTime = dr.GetDateTime(10);
 
                         if (dr.IsDBNull(11))                   //extend_card_num
-                            customer = 0;
+                            customer.extendCardNum = 0;
                         else
-                            customer = dr.GetInt32(11);
+                            customer.extendCardNum = dr.GetInt32(11);
 
                         if (dr.IsDBNull(12))                   //telephone
-                            customer = "";
+                            customer.telephone = "";
                         else
-                            customer = dr.GetString(12);
+                            customer.telephone = dr.GetString(12);
 
                         if (dr.IsDBNull(13))                   //email
-                            customer = "";
+                            customer.email = "";
                         else
-                            customer = dr.GetString(13);
+                            customer.email = dr.GetString(13);
 
                         if (dr.IsDBNull(14))                   //type
-                            customer = CustomerType.PERSONAL;
+                            customer.type = CustomerType.PERSONAL;
                         else
-                            customer = dr.GetInt32(14);
+                            customer.type = (CustomerType)dr.GetInt32(14);
 
                         if (dr.IsDBNull(15))                   //level
-                            customer = CustomerLevel.MEDIUM;
+                            customer.level = CustomerLevel.MEDIUM;
                         else
-                            customer = dr.GetInt32(15);
+                            customer.level = (CustomerLevel)dr.GetInt32(15);
 
-                        customers.Add(Customer);
+                        customers.Add(customer);
                     }
                 }
             }

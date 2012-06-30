@@ -157,6 +157,7 @@
     <Compile Include="Service\ServiceImpl.cs" />
     <Compile Include="util\Resource.cs" />
     <Compile Include="util\SysConfig.cs" />
+    <Compile Include="util\TypeConverter.cs" />
     <Compile Include="util\Utils.cs" />
     <Compile Include="view\BrandForm.cs">
       <SubType>Form</SubType>

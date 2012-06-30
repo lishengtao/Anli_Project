@@ -11,11 +11,7 @@ namespace Model
 
         public Customer(string name) { this.name = name; }
 
-        public string name
-        {
-             get{return name;}
-             set{name = value;}
-        }
+        public string name { get; set; }
 
         public string cardNo { get; set; }
 

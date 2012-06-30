@@ -6,6 +6,7 @@ using DB;
 using Model;
 using System.Data.SqlServerCe;
 using Exceptions;
+using util;
 
 namespace Service
 {
@@ -81,12 +82,12 @@ namespace Service
                         if (dr.IsDBNull(6))                    //income_level
                             customer.incomeLevel = IncomeLevel.GOOD;
                         else
-                            customer.incomeLevel = (IncomeLevel)dr.GetInt32(6);
+                            customer.incomeLevel = TypeConverter.int2IncomeLevel(dr.GetByte(6));
 
                         if (dr.IsDBNull(7))                    //family_level
                             customer.familyLevel = FamilyLevel.MEDIUM;
                         else
-                            customer.familyLevel = (FamilyLevel)dr.GetInt32(7);
+                            customer.familyLevel = TypeConverter.int2FamilyLevel(dr.GetByte(7));
 
                         if (dr.IsDBNull(8))                    //first_contact_time
                             customer.firstContactTime = DateTime.MaxValue;
@@ -121,12 +122,12 @@ namespace Service
                         if (dr.IsDBNull(14))                   //type
                             customer.type = CustomerType.PERSONAL;
                         else
-                            customer.type = (CustomerType)dr.GetInt32(14);
+                            customer.type = TypeConverter.int2CustomerType(dr.GetByte(14));
 
                         if (dr.IsDBNull(15))                   //level
                             customer.level = CustomerLevel.MEDIUM;
                         else
-                            customer.level = (CustomerLevel)dr.GetInt32(15);
+                            customer.level = TypeConverter.int2CustomerLevel(dr.GetByte(15));
 
                         customers.Add(customer);
                     }
@@ -219,12 +220,12 @@ namespace Service
                         if (dr.IsDBNull(6))                    //income_level
                             customer.incomeLevel = IncomeLevel.GOOD;
                         else
-                            customer.incomeLevel = (IncomeLevel)dr.GetInt32(6);
+                            customer.incomeLevel = TypeConverter.int2IncomeLevel(dr.GetByte(6));
 
                         if (dr.IsDBNull(7))                    //family_level
                             customer.familyLevel = FamilyLevel.MEDIUM;
                         else
-                            customer.familyLevel = (FamilyLevel)dr.GetInt32(7);
+                            customer.familyLevel = TypeConverter.int2FamilyLevel(dr.GetByte(7));
 
                         if (dr.IsDBNull(8))                    //first_contact_time
                             customer.firstContactTime = DateTime.MaxValue;
@@ -259,12 +260,12 @@ namespace Service
                         if (dr.IsDBNull(14))                   //type
                             customer.type = CustomerType.PERSONAL;
                         else
-                            customer.type = (CustomerType)dr.GetInt32(14);
+                            customer.type = TypeConverter.int2CustomerType(dr.GetByte(14));
 
                         if (dr.IsDBNull(15))                   //level
                             customer.level = CustomerLevel.MEDIUM;
                         else
-                            customer.level = (CustomerLevel)dr.GetInt32(15);
+                            customer.level = TypeConverter.int2CustomerLevel(dr.GetByte(15));
 
                         customers.Add(customer);
                     }

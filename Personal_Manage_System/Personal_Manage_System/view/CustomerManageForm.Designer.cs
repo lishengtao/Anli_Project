@@ -50,12 +50,10 @@
             this.updateButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
             this.quitButton = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.cutomerListView);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(598, 338);
@@ -80,13 +78,12 @@
             this.email,
             this.level,
             this.telephone});
-            this.cutomerListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cutomerListView.FullRowSelect = true;
             this.cutomerListView.GridLines = true;
-            this.cutomerListView.Location = new System.Drawing.Point(0, 0);
+            this.cutomerListView.Location = new System.Drawing.Point(3, 22);
             this.cutomerListView.Name = "cutomerListView";
             this.cutomerListView.ShowGroups = false;
-            this.cutomerListView.Size = new System.Drawing.Size(598, 338);
+            this.cutomerListView.Size = new System.Drawing.Size(890, 338);
             this.cutomerListView.TabIndex = 0;
             this.cutomerListView.UseCompatibleStateImageBehavior = false;
             this.cutomerListView.View = System.Windows.Forms.View.Details;
@@ -99,7 +96,7 @@
             // name
             // 
             this.name.Text = "姓名";
-            this.name.Width = 84;
+            this.name.Width = 53;
             // 
             // cardNo
             // 
@@ -205,6 +202,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(894, 474);
+            this.Controls.Add(this.cutomerListView);
             this.Controls.Add(this.quitButton);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.updateButton);
@@ -215,7 +213,6 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "客户管理";
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

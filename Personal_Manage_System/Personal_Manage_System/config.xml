@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="gb2312"?>
+<RemoteServerConfig>
+  <rdaConfig>
+    <DBName>db</DBName>
+    <DBUser>sa</DBUser>
+    <DBPwd></DBPwd>
+  </rdaConfig>  
+</RemoteServerConfig>

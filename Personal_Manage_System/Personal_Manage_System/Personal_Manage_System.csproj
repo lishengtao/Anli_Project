@@ -86,6 +86,11 @@
     <Compile Include="Model\Brand.cs" />
     <Compile Include="Model\BusinessModel.cs" />
     <Compile Include="Model\Category.cs" />
+    <Compile Include="Model\Customer.cs" />
+    <Compile Include="Model\CustomerLevel.cs" />
+    <Compile Include="Model\CustomerType.cs" />
+    <Compile Include="Model\FamilyLevel.cs" />
+    <Compile Include="Model\IncomeLevel.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

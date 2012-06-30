@@ -8,6 +8,7 @@ namespace Model
     public enum CustomerType : uint
     {
         AGENT=1,
-        PERSONAL=2
+        PERSONAL=2,
+        OTHER=3
     }
 }

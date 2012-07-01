@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using Model;
 using Service;
+using util;
 
 namespace view
 {
@@ -33,7 +34,30 @@ namespace view
             foreach (Customer customer in customers)
             {
                 ls = new ListViewItem(customer.Id.ToString());
-                //ls.SubItems.Add(brand.getBrandName());
+
+                ls.SubItems.Add(customer.name);
+                ls.SubItems.Add(customer.cardNo);
+                ls.SubItems.Add(customer.birthday.ToString(this.resource.getMsg("date_format")));
+                ls.SubItems.Add(customer.profession);
+                if (customer.isMarried)
+                {
+                    ls.SubItems.Add(this.resource.getMsg("married"));
+                }
+                else
+                {
+                    ls.SubItems.Add(this.resource.getMsg("not_married"));
+                }
+                ls.SubItems.Add(util.TypeConverter.incomeLevel2Str(this.resource, customer.incomeLevel));
+                ls.SubItems.Add(util.TypeConverter.familyLevel2Str(this.resource, customer.familyLevel));
+                ls.SubItems.Add(customer.firstContactTime.ToString(this.resource.getMsg("date_format")));
+                ls.SubItems.Add(customer.makeCardTime.ToString(this.resource.getMsg("date_format")));
+                ls.SubItems.Add(customer.extendCardTime.ToString(this.resource.getMsg("date_format")));
+                ls.SubItems.Add(customer.extendCardNum + "");
+                ls.SubItems.Add(customer.telephone);
+                ls.SubItems.Add(customer.email);
+                ls.SubItems.Add(util.TypeConverter.customerType2Str(this.resource, customer.type));
+                ls.SubItems.Add(util.TypeConverter.customerLevel2Str(this.resource, customer.level));
+
                 this.cutomerListView.Items.Add(ls);
             }
 

@@ -80,7 +80,7 @@
             this.telephone});
             this.cutomerListView.FullRowSelect = true;
             this.cutomerListView.GridLines = true;
-            this.cutomerListView.Location = new System.Drawing.Point(3, 22);
+            this.cutomerListView.Location = new System.Drawing.Point(3, 21);
             this.cutomerListView.Name = "cutomerListView";
             this.cutomerListView.ShowGroups = false;
             this.cutomerListView.Size = new System.Drawing.Size(890, 338);
@@ -96,45 +96,54 @@
             // name
             // 
             this.name.Text = "姓名";
-            this.name.Width = 53;
+            this.name.Width = 76;
             // 
             // cardNo
             // 
             this.cardNo.DisplayIndex = 3;
             this.cardNo.Text = "安利卡号";
+            this.cardNo.Width = 86;
             // 
             // birthday
             // 
             this.birthday.DisplayIndex = 2;
             this.birthday.Text = "出生日期";
+            this.birthday.Width = 87;
             // 
             // profession
             // 
             this.profession.Text = "职业";
+            this.profession.Width = 85;
             // 
             // isMarried
             // 
             this.isMarried.Text = "婚姻状况";
+            this.isMarried.Width = 87;
             // 
             // incomeLevel
             // 
             this.incomeLevel.Text = "经济状况";
+            this.incomeLevel.Width = 89;
             // 
             // familyLevel
             // 
             this.familyLevel.Text = "家庭整体状况";
+            this.familyLevel.Width = 91;
             // 
             // fristContactTime
             // 
             this.fristContactTime.Text = "首次接触时间";
+            this.fristContactTime.Width = 92;
             // 
             // type
             // 
             this.type.Text = "客户类型";
+            this.type.Width = 91;
             // 
             // makeCardTime
             // 
             this.makeCardTime.Text = "办卡日期";
+            this.makeCardTime.Width = 85;
             // 
             // extendCardTime
             // 

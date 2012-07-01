@@ -126,6 +126,9 @@
   <data name="analysis" xml:space="preserve">
     <value>统计分析</value>
   </data>
+  <data name="bad" xml:space="preserve">
+    <value>坏</value>
+  </data>
   <data name="brand_manage" xml:space="preserve">
     <value>品牌管理</value>
   </data>
@@ -138,6 +141,27 @@
   <data name="corp" xml:space="preserve">
     <value>亚太安讯网络技术有限公司（2010）</value>
   </data>
+  <data name="customer_level_high" xml:space="preserve">
+    <value>高端客户</value>
+  </data>
+  <data name="customer_level_low" xml:space="preserve">
+    <value>低端客户</value>
+  </data>
+  <data name="customer_level_medium" xml:space="preserve">
+    <value>中端客户</value>
+  </data>
+  <data name="customer_type_agent" xml:space="preserve">
+    <value>经销商</value>
+  </data>
+  <data name="customer_type_other" xml:space="preserve">
+    <value>其他类型</value>
+  </data>
+  <data name="customer_type_personal" xml:space="preserve">
+    <value>个人</value>
+  </data>
+  <data name="date_format" xml:space="preserve">
+    <value>yyyy年MM月dd日</value>
+  </data>
   <data name="dbName" xml:space="preserve">
     <value>数据库名字</value>
   </data>
@@ -146,6 +170,18 @@
   </data>
   <data name="end" xml:space="preserve">
     <value>结束</value>
+  </data>
+  <data name="family_level_low" xml:space="preserve">
+    <value>低</value>
+  </data>
+  <data name="family_level_medium" xml:space="preserve">
+    <value>中</value>
+  </data>
+  <data name="fmaily_level_high" xml:space="preserve">
+    <value>高</value>
+  </data>
+  <data name="good" xml:space="preserve">
+    <value>好</value>
   </data>
   <data name="haveInLibrary" xml:space="preserve">
     <value>EPC为:{0}的物品已经入库！</value>
@@ -180,6 +216,9 @@
   <data name="loginError" xml:space="preserve">
     <value>登录用户名和密码不对，请重新输入！</value>
   </data>
+  <data name="married" xml:space="preserve">
+    <value>已婚</value>
+  </data>
   <data name="noHaveProduct" xml:space="preserve">
     <value>没有商品，请先扫描商品！</value>
   </data>
@@ -194,6 +233,9 @@
   </data>
   <data name="noProduct" xml:space="preserve">
     <value>没有此代码的商品！</value>
+  </data>
+  <data name="not_married" xml:space="preserve">
+    <value>未婚</value>
   </data>
   <data name="num" xml:space="preserve">
     <value>数量</value>
